@@ -1,0 +1,60 @@
+.card {
+    margin: 0;
+    width: 413px;
+height: 445px;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+margin: 12px 0 0;
+padding: 0;
+}
+
+.card__image {
+height: 413px;
+border-radius: 8px;
+padding: 0;
+margin: 0;
+display: block;
+}
+
+.card__button-like {
+    opacity: .4;
+    width: 23px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+    padding: 0 10px;
+margin: 0;
+background-image: url(../images/heart.svg);
+}
+
+.card__button-like:hover {
+    opacity: 1;
+}
+.card__image-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+text-wrap: nowrap;
+}
+
+@media screen and (max-width: 627px) {
+    .card__image {
+    height: 288px; 
+    margin: auto;
+}
+.card {
+    margin: auto;
+    width: 288px;
+height: 318px;
+}
+}
+    

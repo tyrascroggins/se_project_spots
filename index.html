@@ -1,119 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="description" content="showcase your personal profile">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Thyra Scroggins">
-    <meta name="keywords" content="profile">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="showcase your personal profile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Thyra Scroggins" />
+    <meta name="keywords" content="profile" />
 
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="./favicon.ico" />
 
-
     <title>Spots</title>
+  </head>
 
-</head>
-<body>
+  <body>
     <div class="page">
+      <header class="header">
+        <img src="./images/logo/Logo.svg" alt="Nav Bar" class="header__logo" />
+      </header>
 
-        <header class="header">        <img src="./images/logo/Logo.svg" alt="Nav Bar" class="header__logo">
-         </header>
-   
-          <main class="content">
-
-
+      <main class="content">
         <section class="profile page__sections">
-            <img src="./images/avatar-card-images/bessie-coleman.jpg" alt="Profile Name" class="profile__person">
+          <img
+            src="./images/avatar-card-images/bessie-coleman.jpg"
+            alt="Profile Name"
+            class="profile__person"
+          />
 
-            <div class="profile__column">
-          
+          <div class="profile__column">
             <h1 class="profile__title">Bessie Coleman</h1>
 
-            <p class="profile__subtitle">Civil Aviator</p>            
-          
-         <button type="submit" class="profile__edit-profile-button">
-                                 <img src="./images/pencil-icon.png" alt="Pencil Icon" class="profile__pencil-icon">  Edit Profile
+            <p class="profile__subtitle">Civil Aviator</p>
+
+            <button type="submit" class="profile__edit-profile-button">
+              <img
+                src="./images/pencil-icon.png"
+                alt="Pencil Icon"
+                class="profile__pencil-icon"
+              />
+              Edit Profile
             </button>
-        
-</div>
+          </div>
 
-            <button type="submit" class="profile__new-post-button">
-                <img src="./images/plus.svg" alt="add" class="profile__plus"> New Post
-            </button>
-
-
-        
-    </section>
-
-        <section class="cards page__sections">
-
-  <ul class="cards__list">
-    
-            <li class="card">
-                <img src="./images/avatar-card-images/snowy-window.jpg" alt="window view" class="card__image">
-               
-               <div class="card__content">
-
-                <p class="card__image-title">Val Thorens</p>
-                <button type="button" class="card__button-like">
-</button>
-</div>
-            </li>
-               
-                <li class="card">
-                    <img src="./images/avatar-card-images/restaurant.jpg" alt="Restaurant" class="card__image">
-                    <div class="card__content">
-
-                    <p class="card__image-title">Restaurant terrace</p>
-                    <button type="button" class="card__button-like">
-                        </button>
-                        </div></li>
-
-    <li class="card">
-        <img src="./images/avatar-card-images/dinning.jpg" alt="cafe" class="card__image">
-        <div class="card__content">
-            <p class="card__image-title">An outdoor cafe</p>
-            <button type="button" class="card__button-like">
-                </button>
-                </div>  </li>
-
-            <li class="card">
-                <img src="./images/avatar-card-images/bridge.jpg" alt="bridge" class="card__image">
-                <div class="card__content">
-                    <p class="card__image-title">A very long bridge, over the forest...</p>
-                    <button type="button" class="card__button-like">
-                        </button>
-                        </div>        </li>
-               
-                <li class="card">
-                    <img src="./images/avatar-card-images/garage-walk.jpg" alt="Tunnel" class="card__image">
-                    <div class="card__content">
-                        <p class="card__image-title">Tunnel with morning light</p>
-                        <button type="button" class="card__button-like">
-                            </button>
-                            </div></li>
-
-    <li class="card">
-        <img src="./images/avatar-card-images/shed.jpg" alt="house" class="card__image">
-        <div class="card__content">
-            <p class="card__image-title">Mountain house</p>
-            <button type="button" class="card__button-like">
-               </button>
-                </div> </li>
-    
-</ul>
-
+          <button type="submit" class="profile__new-post-button">
+            <img src="./images/plus.svg" alt="add" class="profile__plus" /> New
+            Post
+          </button>
         </section>
 
-       
-    </main>
+        <section class="cards page__sections">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/avatar-card-images/snowy-window.jpg"
+                alt="window view"
+                class="card__image"
+              />
 
-    <footer class="footer">
+              <div class="card__content">
+                <p class="card__image-title">Val Thorens</p>
+                <button type="button" class="card__button-like"></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                src="./images/avatar-card-images/restaurant.jpg"
+                alt="Restaurant"
+                class="card__image"
+              />
+              <div class="card__content">
+                <p class="card__image-title">Restaurant terrace</p>
+                <button type="button" class="card__button-like"></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                src="./images/avatar-card-images/dinning.jpg"
+                alt="cafe"
+                class="card__image"
+              />
+              <div class="card__content">
+                <p class="card__image-title">An outdoor cafe</p>
+                <button type="button" class="card__button-like"></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                src="./images/avatar-card-images/bridge.jpg"
+                alt="bridge"
+                class="card__image"
+              />
+              <div class="card__content">
+                <p class="card__image-title">
+                  A very long bridge, over the forest...
+                </p>
+                <button type="button" class="card__button-like"></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                src="./images/avatar-card-images/garage-walk.jpg"
+                alt="Tunnel"
+                class="card__image"
+              />
+              <div class="card__content">
+                <p class="card__image-title">Tunnel with morning light</p>
+                <button type="button" class="card__button-like"></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                src="./images/avatar-card-images/shed.jpg"
+                alt="house"
+                class="card__image"
+              />
+              <div class="card__content">
+                <p class="card__image-title">Mountain house</p>
+                <button type="button" class="card__button-like"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
         <p class="footer__content">2023 © Spots</p>
-    </footer>
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>

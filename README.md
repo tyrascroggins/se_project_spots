@@ -43,4 +43,4 @@ An interactive social media web application where users can add and remove photo
 [Launch Spots Website here](https://github.com/tyrascroggins/se_project_spots/)  
 
 **Video**  
-[A descriptive video explanation](https://#)  
+[A descriptive video explanation](https://drive.google.com/file/d/1BQ1rapRBq3zye4U2Vezi4THjTssNoIgW/view?usp=drive_link)  

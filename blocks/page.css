@@ -14,6 +14,7 @@
 
 .page {
   max-width: 1440px;
+  min-width: 320px;
   background: #fcf5e5;
   margin: auto;
   padding: 0;

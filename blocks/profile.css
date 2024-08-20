@@ -100,6 +100,7 @@
 
 .profile__new-post-button:hover {
   opacity: 0.8;
+  padding: 0;
 }
 
 @media screen and (max-width: 627px) {
@@ -113,28 +114,23 @@
     margin: 20px auto 12px;
     height: 80px;
     width: 80px;
-    padding: 0;
   }
 
   .profile__title {
     font-size: 20px;
     margin: 0 auto;
-    padding: 0;
-   }
+  }
 
   .profile__subtitle {
     margin: 6px auto 0;
-    padding: 0;
   }
 
   .profile__edit-profile-button {
     margin: 32px auto 20px;
-    padding: 0;
   }
 
   .profile__new-post-button {
     width: 288px;
     margin: 0 auto;
-    padding: 0;
   }
 }

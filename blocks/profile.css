@@ -121,10 +121,12 @@
   .profile__title {
     font-size: 20px;
     margin: 0 auto;
+    max-width: 288px;
   }
 
   .profile__subtitle {
     margin: 6px auto 0;
+    max-width: 288px;
   }
 
   .profile__edit-profile-button {

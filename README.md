@@ -1,22 +1,60 @@
-# Project 3: Spots
+# Spots: A Social Media Web App
 
-### Overview  
+**Spots** is an interactive social media platform where users can share, like, and manage photos while personalizing their profiles. This project focuses on adaptive web design, offering a user-friendly interface across devices.
 
-* Intro  
-* Figma Design Layout  
-* Tech Notes  
-* Website Link  
-* Website Video Description  
+## Table of Contents
+- [Overview](#overview)
+- [Technologies and Techniques](#technologies-and-techniques)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Design](#design)
+- [Tech Notes](#tech-notes)
+- [Links](#links)
+- [Contact](contact)
 
-## Intro
+## Overview
 
-**Sprint 3: Adaptive Web Design and Working with Layouts**
+Spots is a social media application that lets users:
+- Upload and remove photos
+- Like and interact with others' posts
+- Make minor profile adjustments
 
-An interactive social media web application where users can add and remove photos, like photos from other users, and make a few minor adjustments to their profile.
+## Technologies and Techniques
 
-## Figma Design Layout
+- **Frontend**: HTML, CSS, Flexbox/Grid, Media Queries
+- **Design**: Figma for UI/UX design
 
-[Here you can download the project images and get details on the design and updates](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+## Features
+
+- Responsive design for mobile and desktop
+- Interactive photo gallery with like functionality
+- Editable user profile with personalization options
+
+## Getting Started
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/tyrascroggins/spots.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd spots
+    ```
+3. **Open `files` in your prefered editing software**.
+
+## Usage
+
+Once the project is finished, you can:
+- Add photos using the add posts feature.
+- Like posts by clicking the heart icon.
+- Edit your profile.
+
+## Design
+
+The UI/UX was designed using Figma. You can view the design details [here](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1).
 
 ![Spots Figma Design](./images/demo/website.jpg)
 
@@ -40,7 +78,12 @@ An interactive social media web application where users can add and remove photo
 ## Links
 
 **Live Link**  
-[Launch Spots Website here](https://github.com/tyrascroggins/se_project_spots/)  
+[Launch Spots Website here](https://tyrascroggins.github.io/se_project_spots/)  
 
 **Video**  
 [A descriptive video explanation](https://drive.google.com/file/d/1BQ1rapRBq3zye4U2Vezi4THjTssNoIgW/view?usp=drive_link)  
+
+## Contact
+
+Software Engineer
+Tyra Scroggins: tyrascroggins@gmail.com

@@ -1,7 +1,6 @@
 .card {
   margin: 0;
   width: 413px;
-  height: 445px;
 }
 
 .card__content {
@@ -29,6 +28,7 @@
   margin: 0;
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
+  background-color: #fcf5e5;
 }
 
 .card__button-like:hover {
@@ -57,6 +57,5 @@
   .card {
     margin: auto;
     width: 288px;
-    height: 318px;
   }
 }

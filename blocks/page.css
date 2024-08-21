@@ -1,21 +1,6 @@
-@font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("./vendor/fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("./vendor/fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
 .page {
   max-width: 1440px;
   min-width: 320px;
-  background: #fcf5e5;
   margin: auto;
   padding: 0;
   min-height: 100vh;

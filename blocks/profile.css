@@ -1,5 +1,4 @@
 .profile {
-  background: #fcf5e5;
   display: flex;
   padding: 34px 0px 20px 0px;
   border-bottom: 1px solid rgba(33, 33, 33, 0.4);
@@ -20,6 +19,7 @@
 }
 
 .profile__title {
+  color: rgba(33, 33, 33, 1);
   padding: 0;
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -32,9 +32,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__subtitle {
+  color: rgba(33, 33, 33, .7);
   margin: 12px 0 0;
   padding: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -47,9 +49,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__edit-profile-button {
+  position: relative;
   cursor: pointer;
   background-color: #fcf5e5;
   border: 0;
@@ -60,7 +64,7 @@
   font-weight: 500;
   line-height: 1;
   text-align: left;
-  opacity: 0.7;
+  color: rgba(33, 33, 33, .7);
 }
 
 .profile__edit-profile-button:hover {
@@ -69,7 +73,6 @@
 
 .profile__pencil-icon {
   width: 16px;
-  opacity: 0.7;
 }
 
 .profile__pencil-icon:hover {
@@ -100,7 +103,6 @@
 
 .profile__new-post-button:hover {
   opacity: 0.8;
-  padding: 0;
 }
 
 @media screen and (max-width: 627px) {

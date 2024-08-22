@@ -7,7 +7,4 @@
 @import url(../blocks/cards.css);
 @import url(../blocks/card.css);
 @import url(../blocks/content.css);
-
-.index__body {
-    background: #fcf5e5;
-}
+@import url(../blocks/body.css);

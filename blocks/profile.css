@@ -110,6 +110,7 @@
     flex-direction: column;
     max-width: 288px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .profile__column {
@@ -118,6 +119,7 @@
   }
 
   .profile__person {
+    padding 0;
     margin: 20px auto 12px;
     height: 80px;
     width: 80px;

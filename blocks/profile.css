@@ -119,7 +119,7 @@
   }
 
   .profile__person {
-    padding 0;
+    padding: 0;
     margin: 0 auto 12px;
     height: 80px;
     width: 80px;

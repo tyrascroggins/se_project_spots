@@ -1,0 +1,135 @@
+.modal {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.modal__opened {
+  visibility: visible;
+}
+
+.modal__container {
+  background: white;
+  max-width: 730px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px 50px;
+  position: relative;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.modal__top-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.modal__close-btn {
+  opacity: 0.4;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/close-btn.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.modal__close-btn:hover {
+  opacity: 1;
+}
+
+.modal__title {
+  margin: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 4px 0;
+}
+
+.modal__form {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: rgba(33, 33, 33);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.modal__input {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: rgba(33, 33, 33);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  padding: 16px 12px;
+  border-radius: 8px;
+}
+.modal__input::placeholder {
+  opacity: 0.3;
+}
+
+.modal__save-btn {
+  width: 156px;
+  height: 52px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgba(33, 33, 33);
+  margin: 0;
+  padding: 18px;
+  color: rgba(252, 245, 229);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 400px) {
+  .modal__save-btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .modal__container {
+    padding: 12px;
+    margin: 0 auto;
+  }
+
+  .modal__top-content {
+    margin: 0 0 24px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .modal__input {
+    font-size: 16px;
+  }
+}

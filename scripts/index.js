@@ -7,4 +7,23 @@ const initialCards = [
     { Name: "Mountain house", Link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg" }
   ];
   
-console.log(initialCards);
+  //opening the edit profile form
+const profileEditButton = document.querySelector('.profile__edit-profile-button');
+const profileEditModal = document.querySelector('#edit-profile-modal');
+//use the classes when posible so not to have multiple id's.
+const profileEditModalClose = profileEditModal.querySelector('.modal__close-btn');
+
+// use the same functions to add and remove to keep it simple
+function modalOpened() {
+profileEditModal.classList.add('modal__opened');
+}
+
+function modalClosed() {
+profileEditModal.classList.remove('modal__opened');
+}
+
+// here you need to activate the functions
+profileEditButton.addEventListener("click", modalOpened);
+profileEditModalClose.addEventListener("click", modalClosed);
+
+ 

@@ -89,9 +89,25 @@
   margin: 0;
   padding: 16px 12px;
   border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2); 
+  transition: border-color 0.3s ease;
 }
+
 .modal__input::placeholder {
   opacity: 0.3;
+}
+
+.modal__input:hover {
+  border-color: rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+}
+
+.modal__input:focus {
+  border-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal__input:not(:placeholder-shown) {
+  border-color: rgba(0, 0, 0, 0.2); 
 }
 
 .modal__save-btn {

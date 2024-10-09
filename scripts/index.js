@@ -10,11 +10,28 @@ const initialCards = [
   //opening the edit profile form
 const profileEditButton = document.querySelector('.profile__edit-profile-button');
 const profileEditModal = document.querySelector('#edit-profile-modal');
-//use the classes when posible so not to have multiple id's.
+// call the form fields from the DOM.
+const nameInput = document.querySelector('.profile__name');
+const jobInput = document.querySelector('.profile__job');
+// defining the profile elements from the DOM
 const profileEditModalClose = profileEditModal.querySelector('.modal__close-btn');
+const profileFormElement = profileEditModal.querySelector('.modal__form');
+const profileNameElement = profileEditModal.querySelector('#profile-person-input');
+const profileJobElement = profileEditModal.querySelector('#profile-description-input');
+
+const cardTemplate = document.querySelector('#card-template').content;
+const cardElement = cardTemplate.cloneNode(true);
+
+function getCardElement() {
+
+}
 
 // use the same functions to add and remove to keep it simple
 function modalOpened() {
+ // Get the values of each form field from the value property 
+ // of the corresponding input element.
+  nameInput.value = profileNameElement.textContent;
+  jobInput.value = profileJobElement.textContent;
 profileEditModal.classList.add('modal__opened');
 }
 
@@ -22,8 +39,26 @@ function modalClosed() {
 profileEditModal.classList.remove('modal__opened');
 }
 
-// here you need to activate the functions
+function handleProfileFormSubmit(evt) {
+  // Prevent default browser behavior, see explanation below. 
+  evt.preventDefault(); 
+
+  // insert the new values input into the textContent property 
+  nameInput.textContent = profileNameElement.value;
+  jobInput.textContent = profileNameElement.value;
+  // TODO: Close the modal after submit buy calling the close function
+  modalClosed();
+}
+
+
+// activate the functions
+profileFormElement.addEventListener('submit', handleProfileFormSubmit);
 profileEditButton.addEventListener("click", modalOpened);
 profileEditModalClose.addEventListener("click", modalClosed);
 
- 
+
+
+
+
+
+

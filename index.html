@@ -30,9 +30,9 @@
           />
 
           <div class="profile__column">
-            <h1 class="profile__title">Bessie Coleman</h1>
+            <h1 class="profile__name">Bessie Coleman</h1>
 
-            <p class="profile__subtitle">Civil Aviator</p>
+            <p class="profile__job">Civil Aviator</p>
 
             <button type="button" class="profile__edit-profile-button">
               <img
@@ -52,80 +52,21 @@
 
         <section class="cards page__sections">
           <ul class="cards__list">
+
+  <template id="card-template">
             <li class="card">
               <img
-                src="./images/avatar-card-images/snowy-window.jpg"
-                alt="window view"
-                class="card__image"
-              />
-
-              <div class="card__content">
-                <h2 class="card__image-title">Val Thorens</h2>
-                <button type="button" class="card__button-like"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/avatar-card-images/restaurant.jpg"
-                alt="Restaurant"
+                src=""
+                alt="w"
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__image-title">Restaurant terrace</h2>
+                <h2 class="card__image-title"></h2>
                 <button type="button" class="card__button-like"></button>
               </div>
             </li>
-
-            <li class="card">
-              <img
-                src="./images/avatar-card-images/dinning.jpg"
-                alt="cafe"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__image-title">An outdoor cafe</h2>
-                <button type="button" class="card__button-like"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/avatar-card-images/bridge.jpg"
-                alt="bridge"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__image-title">
-                  A very long bridge, over the forest...
-                </h2>
-                <button type="button" class="card__button-like"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/avatar-card-images/garage-walk.jpg"
-                alt="Tunnel"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__image-title">Tunnel with morning light</h2>
-                <button type="button" class="card__button-like"></button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/avatar-card-images/shed.jpg"
-                alt="house"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__image-title">Mountain house</h2>
-                <button type="button" class="card__button-like"></button>
-              </div>
-            </li>
+  </template>
+  
           </ul>
         </section>
       </main>
@@ -143,13 +84,13 @@
         </div>
 
           <form name="edit_profile" class="modal__form">
-<label for="name" class="modal__label">
+<label for="profile-person-input" class="modal__label">
   Name
-  <input type="text" id="name" class="modal__input" placeholder="Type your name">
+  <input type="text" id="profile-person-input" class="modal__input" placeholder="Type your name">
 </label>
-<label for="description" class="modal__label">
+<label for="profile-description-input" class="modal__label">
   Description
-  <input type="text" id="description" class="modal__input" placeholder="Describe yourself">
+  <input type="text" id="profile-description-input" class="modal__input" placeholder="Describe yourself">
  </label> 
  <button type="submit" class="modal__save-btn">Save</button>
           </form>

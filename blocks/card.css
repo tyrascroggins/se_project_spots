@@ -1,6 +1,5 @@
 .card {
   margin: 0 auto;
-  width: 413px;
 }
 
 .card__content {
@@ -8,10 +7,14 @@
   justify-content: space-between;
   margin: 12px 0 0;
   padding: 0;
+  width: 413px;
+  overflow: hidden;
+  
 }
 
 .card__image {
   height: 413px;
+  width: 413px;
   border-radius: 8px;
   padding: 0;
   margin: 0;
@@ -29,6 +32,7 @@
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-color: transparent;
+
 }
 
 .card__button-like:hover {
@@ -50,15 +54,19 @@
 
 @media screen and (max-width: 862px) {
 
+  .card__content {
+    width: 288px;
+  }
+
   .card__image {
     height: 288px;
+    width: 288px;
     margin: auto;
   }
 
   .card {
     margin: auto;
-    width: 288px;
-  }
+     }
 
   .card__image-title {
     font-size: 16px;

@@ -10,20 +10,32 @@ const initialCards = [
   //opening the edit profile form
 const profileEditButton = document.querySelector('.profile__edit-profile-button');
 const profileEditModal = document.querySelector('#edit-profile-modal');
+
 // call the form fields from the DOM.
 const nameInput = document.querySelector('.profile__name');
 const jobInput = document.querySelector('.profile__job');
+
 // defining the profile elements from the DOM
 const profileEditModalClose = profileEditModal.querySelector('.modal__close-btn');
 const profileFormElement = profileEditModal.querySelector('.modal__form');
 const profileNameElement = profileEditModal.querySelector('#profile-person-input');
 const profileJobElement = profileEditModal.querySelector('#profile-description-input');
 
+//cards
 const cardTemplate = document.querySelector('#card-template').content;
-const cardElement = cardTemplate.cloneNode(true);
 
-function getCardElement() {
+function getCardElement(data) {
+   const cardElement = cardTemplate.querySelector('.card').cloneNode(true);
 
+  const cardNameElement = cardElement.querySelector('.card__image-title');
+  const cardLinkElement = cardElement.querySelector('.card__image');
+
+  cardNameElement.textContent = data.Name; 
+  cardLinkElement.src = data.Link; 
+  cardLinkElement.alt = data.Name; 
+
+  return cardElement;
+  
 }
 
 // use the same functions to add and remove to keep it simple
@@ -45,11 +57,15 @@ function handleProfileFormSubmit(evt) {
 
   // insert the new values input into the textContent property 
   nameInput.textContent = profileNameElement.value;
-  jobInput.textContent = profileNameElement.value;
+  jobInput.textContent = profileJobElement.value;
   // TODO: Close the modal after submit buy calling the close function
   modalClosed();
 }
 
+for (let i = 0; i < initialCards.length; i++) {
+ const cardElement = getCardElement(initialCards[i]);
+document.querySelector('.cards__list').prepend(cardElement);
+}
 
 // activate the functions
 profileFormElement.addEventListener('submit', handleProfileFormSubmit);

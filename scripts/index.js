@@ -65,10 +65,9 @@ function getCardElement(data) {
 
 // use the same functions to add and remove to keep it simple
 function openModal() {
-  // Get the values of each form field from the value property
-  // of the corresponding input element.
-  nameInput.value = profileNameElement.value;
-  jobInput.value = profileJobElement.value;
+  // Insert current profile data into the form inputs before showing the modal
+  profileNameElement.value = nameInput.textContent; // Set the input value to the profile's current name
+  profileJobElement.value = jobInput.textContent;
   profileEditModal.classList.add("modal_open");
 }
 
@@ -80,7 +79,7 @@ function submitProfileForm(evt) {
   // Prevent default browser behavior, see explanation below.
   evt.preventDefault();
 
-  // Updating profile info with form values
+  // updates the profile information with the new values
   nameInput.textContent = profileNameElement.value;
   jobInput.textContent = profileJobElement.value;
   // Close the modal after submit buy calling the close function

@@ -60,13 +60,17 @@ The UI/UX was designed using Figma. You can view the design details [here](https
 
 ## Tech Notes
 
+<div style="display: flex; max-width: 449px; border-width: 2px; border-color: #efefef; border-style: solid; padding: 20px; flex-direction: column">   per Figma I changed the media size needed to change to a bigger size due to the close button getting cut off. Also the Figma dementions of 45.49px appear to be the correct demintions for the top close button at media change.
+  <img src="./images/demo/mediaChange.jpg" style="margin-right: 20px; height: 143px;">
+</div>
+
 <div style="display: flex; max-width: 500px; border-width: 2px; border-color: #efefef; border-style: solid; padding: 20px;">
   <img src="./images/demo/content-button.jpg" style="margin-right: 20px; height: 200px;">
   The designer requests using ellipsis with a maximum of three lines for the title and description, and one line for the image description. Also, note that the button is larger here. I do not recommend downloading the button image; it's best to style it using CSS.
 </div>
 
-<div style="display: flex; max-width: 500px; border-width: 2px; border-color: #efefef; border-style: solid; padding: 20px;">
-  <img src="./images/demo/heart-like.jpg" style="margin-right: 20px; height: 94px;">
+<div style="display: flex; max-width: 500px; border-width: 2px; border-color: #efefef; border-style: solid; padding: 20px; flex-direction: column">
+  <img src="./images/demo/heart-like.jpg" style="margin-right: 20px; width: 159px;">
   I added padding to the heart/like button because it was being cut off on the right. You could alternatively set a max-width, but then you would need to include it in the @media queries as well. I found it simpler to add the slight padding instead. Also, note the one-line ellipsis here as well.
 </div>
 

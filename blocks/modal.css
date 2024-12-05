@@ -18,7 +18,6 @@
 .modal_open {
   visibility: visible;
   opacity: 1;
-
 }
 .modal__close {
   width: 40px;
@@ -34,7 +33,6 @@
   opacity: 0.4;
 }
 
-
 .modal__close:hover {
   opacity: 1;
 }
@@ -48,7 +46,6 @@
   position: relative;
   border-radius: 8px;
   margin: 0;
-
 }
 
 .modal__top-content {
@@ -90,7 +87,7 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: rgba(33, 33, 33);
   font-size: 20px;
-  line-height: 1.2; 
+  line-height: 1.2;
   font-weight: 500;
   margin: 0;
   padding: 16px 12px;
@@ -163,7 +160,7 @@
   max-width: 100%;
   max-height: 100%;
   margin: auto;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .modal__preview-image {
@@ -186,7 +183,7 @@
 }
 
 .modal__preview-title {
-  display: inline-block;/*text-wrap does't work with block displays*/
+  display: inline-block; /*text-wrap does't work with block displays*/
   color: #ffffff;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 20px;
@@ -198,10 +195,10 @@
   margin-top: 8px;
   max-width: 80vw;
   word-wrap: break-word; /* Wrap long words onto the next line */
-    word-break: break-word; /* Break long words if necessary */
-    overflow-wrap: anywhere; /* Allow wrapping at any point */
-    white-space: normal; /* Ensure normal text wrapping behavior */
-  }
+  word-break: break-word; /* Break long words if necessary */
+  overflow-wrap: anywhere; /* Allow wrapping at any point */
+  white-space: normal; /* Ensure normal text wrapping behavior */
+}
 
 @media screen and (max-width: 450px) {
   .modal__btn-save {
@@ -225,23 +222,22 @@
 
   .modal__input {
     font-size: 16px;
-
   }
   .modal__label {
     margin: 0 0 24px;
   }
 }
+
 @media screen and (max-width: 560px) {
   .modal__preview-close {
     position: relative;
     top: -45.49px;
     right: 45.49px;
     z-index: 10;
-  }  
+  }
 }
 
 @media screen and (max-width: 320px) {
-
   .modal__preview-image {
     max-width: 288px;
     border-radius: 4px;
@@ -254,6 +250,5 @@
 
   .modal__preview-wrapper {
     gap: 0;
-
   }
 }

@@ -84,7 +84,7 @@
   padding: 0;
 }
 
-.profile__btn-new-post{
+.profile__btn-new-post {
   width: 149px;
   height: 52px;
   border: 0;
@@ -140,7 +140,7 @@
     margin: 32px auto 20px;
   }
 
-  .profile__btn-new-post{
+  .profile__btn-new-post {
     width: 288px;
     margin: 0 auto;
   }

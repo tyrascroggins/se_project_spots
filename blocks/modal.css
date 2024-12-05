@@ -150,8 +150,6 @@
 
 .modal__preview-container {
   position: relative;
-  max-width: 80vw;
-  max-height: 80vh;
   background-color: transparent;
   margin: auto;
   padding: 0;
@@ -170,8 +168,8 @@
 
 .modal__preview-image {
   display: block;
-  max-width: 100%;
-  max-height: 661px;
+  max-width: 80vw;
+  max-height: 80vh;
   border-radius: 8px;
   padding: 0;
   margin: 0;
@@ -188,7 +186,7 @@
 }
 
 .modal__preview-title {
-  display: inline-block;
+  display: inline-block;/*text-wrap does't work with block displays*/
   color: #ffffff;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 20px;
@@ -198,7 +196,12 @@
   border-radius: 8px;
   padding: 4px 8px;
   margin-top: 8px;
- }
+  max-width: 80vw;
+  word-wrap: break-word; /* Wrap long words onto the next line */
+    word-break: break-word; /* Break long words if necessary */
+    overflow-wrap: anywhere; /* Allow wrapping at any point */
+    white-space: normal; /* Ensure normal text wrapping behavior */
+  }
 
 @media screen and (max-width: 450px) {
   .modal__btn-save {
@@ -235,8 +238,6 @@
     right: 45.49px;
     z-index: 10;
   }  
-
-
 }
 
 @media screen and (max-width: 320px) {
@@ -248,8 +249,9 @@
 
   .modal__preview-title {
     font-size: 16px;
+    max-width: 288px;
   }
-  
+
   .modal__preview-wrapper {
     gap: 0;
 

@@ -11,10 +11,32 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
 .modal_open {
   visibility: visible;
+  opacity: 1;
+
+}
+.modal__close {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/close-btn.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  opacity: 0.4;
+}
+
+
+.modal__close:hover {
+  opacity: 1;
 }
 
 .modal__container {
@@ -26,6 +48,7 @@
   position: relative;
   border-radius: 8px;
   margin: 0;
+
 }
 
 .modal__top-content {
@@ -33,23 +56,6 @@
   justify-content: space-between;
   margin: 0 0 32px;
   padding: 0;
-}
-
-.modal__close-add-btn {
-  opacity: 0.4;
-  width: 40px;
-  height: 40px;
-  border: 0;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-  background-image: url(../images/close-btn.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-
-.modal__close-add-btn:hover {
-  opacity: 1;
 }
 
 .modal__title {
@@ -110,7 +116,7 @@
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal__save-btn {
+.modal__btn-save {
   width: 156px;
   height: 52px;
   border: 0;
@@ -127,7 +133,7 @@
 }
 
 /* Preview Modal */
-.modal_preview {
+.modal_preview-image {
   display: flex;
   position: fixed;
   top: 0;
@@ -142,7 +148,7 @@
   padding: 0;
 }
 
-.modal__container_preview {
+.modal__preview-container {
   position: relative;
   max-width: 80vw;
   max-height: 80vh;
@@ -171,21 +177,13 @@
   margin: 0;
 }
 
-.modal__close-btn {
+.modal__preview-close {
   flex-shrink: 0; /* Prevent the button from resizing */
-  width: 40px;
-  height: 40px;
-  border: none;
   background-image: url(../images/close-btnWhite.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
+  opacity: 1;
 }
 
-.modal__close-btn:hover {
+.modal__preview-close:hover {
   opacity: 0.4;
 }
 
@@ -203,7 +201,7 @@
  }
 
 @media screen and (max-width: 450px) {
-  .modal__save-btn {
+  .modal__btn-save {
     width: 100%;
     margin: 0 auto;
   }
@@ -230,20 +228,20 @@
     margin: 0 0 24px;
   }
 }
-
 @media screen and (max-width: 560px) {
-  .modal__close-btn {
+  .modal__preview-close {
     position: relative;
     top: -45.49px;
     right: 45.49px;
     z-index: 10;
-  }
+  }  
+}
+
+@media screen and (max-width: 320px) {
 
   .modal__preview-image {
     max-width: 288px;
     border-radius: 4px;
-
-
   }
 
   .modal__preview-title {

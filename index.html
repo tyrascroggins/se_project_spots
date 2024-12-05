@@ -32,7 +32,7 @@
 
             <p class="profile__job">Civil Aviator</p>
 
-            <button type="button" class="profile__edit-profile-button">
+            <button type="button" class="profile__btn-edit">
               <img
                 src="./images/pencil.svg"
                 alt="Pencil Icon"
@@ -42,8 +42,8 @@
             </button>
           </div>
 
-          <button type="button" class="profile__new-post-button">
-            <img src="./images/plus.svg" alt="add" class="profile__plus" /> New
+          <button type="button" class="profile__btn-new-post">
+            <img src="./images/add-icon.svg" alt="add" class="profile__new-post-icon" /> New
             Post
           </button>
         </section>
@@ -72,7 +72,7 @@
       <div class="modal__container">
         <div class="modal__top-content">
           <h2 class="modal__title">Edit profile</h2>
-          <button type="button" class="modal__close-add-btn"></button>
+          <button type="button" class="modal__close"></button>
         </div>
 
         <form name="edit_profile" class="modal__form">
@@ -96,7 +96,7 @@
               placeholder="Describe yourself"
             />
           </label>
-          <button type="submit" class="modal__save-btn">Save</button>
+          <button type="submit" class="modal__btn-save">Save</button>
         </form>
       </div>
     </div>
@@ -105,7 +105,7 @@
       <div class="modal__container">
         <div class="modal__top-content">
           <h2 class="modal__title">New Post</h2>
-          <button type="button" class="modal__close-add-btn"></button>
+          <button type="button" class="modal__close"></button>
         </div>
 
         <form name="add-card" class="modal__form">
@@ -129,18 +129,18 @@
               placeholder="Type your caption"
             />
           </label>
-          <button type="submit" class="modal__save-btn">Save</button>
+          <button type="submit" class="modal__btn-save">Save</button>
         </form>
       </div>
     </div>
 
-    <div class="modal modal_preview" id="preview-modal">
-      <div class="modal__container_preview">
+    <div class="modal modal_preview-image" id="preview-modal">
+      <div class="modal__preview-container">
         <div class="modal__preview-wrapper">
           <img src="" alt="Preview Image" class="modal__preview-image" />
           <button
             type="button"
-            class="modal__close-btn"
+            class="modal__close modal__preview-close"
             id="preview-modal-close"
           ></button>
         </div>

@@ -36,13 +36,8 @@ const initialCards = [
 const cardTemplate = document.querySelector("#card-template").content;
 
 // Profile Edit Elements
-const profileEditButton = document.querySelector(
-  ".profile__edit-profile-button"
-);
+const profileEditButton = document.querySelector(".profile__btn-edit");
 const profileEditModal = document.querySelector("#edit-profile-modal");
-const profileEditModalClose = profileEditModal.querySelector(
-  ".modal__close-add-btn"
-);
 const profileForm = document.forms["edit_profile"];
 const profileNameElement = profileForm.elements["editProfileName"];
 const profileJobElement = profileForm.elements["editProfileJob"];
@@ -51,17 +46,15 @@ const jobInput = document.querySelector(".profile__job");
 
 // Add Card Elements
 const addCardModel = document.querySelector("#add-card-modal");
-const addCardModelButton = document.querySelector(".profile__new-post-button");
-const addCardModalClose = addCardModel.querySelector(".modal__close-add-btn");
+const addCardModelButton = document.querySelector(".profile__btn-new-post");
 const addCardModelForm = document.forms["add-card"];
 const addCardLinkElement = addCardModelForm.elements["addCardImageLink"];
 const addCardCaptionElement = addCardModelForm.elements["addCardCaption"];
 
-// Card preview Elements
+// Card Preview Elements
 const previewModal = document.querySelector("#preview-modal");
 const previewImage = previewModal.querySelector(".modal__preview-image");
 const previewTitle = previewModal.querySelector(".modal__preview-title");
-const previewModalClose = previewModal.querySelector("#preview-modal-close");
 
 // Card List Element
 const cardsListElement = document.querySelector(".cards__list");
@@ -70,6 +63,13 @@ const cardsListElement = document.querySelector(".cards__list");
 function openModal(modal) {
   modal.classList.add("modal_open");
 }
+
+// Universal close button handler
+const closeButtons = document.querySelectorAll(".modal__close");
+closeButtons.forEach((button) => {
+  const modal = button.closest(".modal");
+  button.addEventListener("click", () => closeModal(modal));
+});
 
 // Close a modal
 function closeModal(modal) {
@@ -90,15 +90,13 @@ function getCardElement(data) {
   cardLinkElement.alt = data.imageName;
 
   cardLikeButton.addEventListener("click", () => {
-    cardLikeButton.classList.toggle("liked");
+    cardLikeButton.classList.toggle("card__button-like_active");
   });
 
-  // Removes the card from the DOM
   deleteButton.addEventListener("click", () => {
     cardElement.remove();
   });
 
-  // Open preview modal on image click
   cardLinkElement.addEventListener("click", () => {
     openPreviewModal(data.imageLink, data.imageName);
   });
@@ -114,16 +112,11 @@ function submitProfileForm(evt) {
   closeModal(profileEditModal);
 }
 
-// Open Profile Edit Modal with Current Data
+// Open Profile Edit Modal
 profileEditButton.addEventListener("click", () => {
   profileNameElement.value = nameInput.textContent;
   profileJobElement.value = jobInput.textContent;
   openModal(profileEditModal);
-});
-
-// Close Profile Edit Modal
-profileEditModalClose.addEventListener("click", () => {
-  closeModal(profileEditModal);
 });
 
 // Add Submit Event Listener for Profile Form
@@ -138,13 +131,10 @@ addCardModelForm.addEventListener("submit", (evt) => {
     imageLink: addCardLinkElement.value,
   };
 
-  // Validate URL
   try {
-    new URL(newCardData.imageLink); // Throws an error if the URL is invalid
+    new URL(newCardData.imageLink);
   } catch {
-    alert(
-      "Please provide a valid image URL. It needs to be the imae it's self."
-    );
+    alert("Please provide a valid image URL.");
     return;
   }
 
@@ -160,23 +150,13 @@ addCardModelButton.addEventListener("click", () => {
   openModal(addCardModel);
 });
 
-// Close Add Card Modal
-addCardModalClose.addEventListener("click", () => {
-  closeModal(addCardModel);
-});
-
 // Open preview modal
 function openPreviewModal(imageSrc, title) {
   previewImage.src = imageSrc;
   previewImage.alt = title;
   previewTitle.textContent = title;
-  openModal(previewModal); // Reuse the existing openModal function
+  openModal(previewModal);
 }
-
-// Close preview modal
-previewModalClose.addEventListener("click", () => {
-  closeModal(previewModal); // Reuse the existing closeModal function
-});
 
 // Render Initial Cards
 initialCards.forEach((card) => {
